@@ -1,0 +1,26 @@
+
+GIT 
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+git --version
+git --help
+
+crear carpeta
+git init
+git config --global init.defaultBranch main
+git branch -m main
+
+git config --global user.name "Jorge Ramirez"
+git config --global user.email "sir.jorge.ramirez@gmail.com"
+git config --list
+
+stage => limbo: Es una etapa donde se quedara el archivo listo para hacer un commit
+	o si se desea para devolverlo
+
+git rm --cached file.txt => devolver al proyecto desde el stage
+
+
+	PROJECT 	STAGE		GIT
+	file.txt 
+		      file.txt 	
