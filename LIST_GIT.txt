@@ -19,8 +19,17 @@ stage => limbo: Es una etapa donde se quedara el archivo listo para hacer un com
 	o si se desea para devolverlo
 
 git rm --cached file.txt => devolver al proyecto desde el stage
-
+git commit -m "message that you want"
 
 	PROJECT 	STAGE		GIT
 	file.txt 
 		      file.txt 	
+
+git log
+git branch => verificar ramas
+git checkout -b nombre_rama => crear rama
+git checkout rama_existente - git switch rama_existente => cambiar a esa rama
+
+Algunas opciones para renderizar las ramas:
+	gitk
+	git log --graph --oneline --decorate --all
