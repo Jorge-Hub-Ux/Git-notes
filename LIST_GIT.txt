@@ -35,4 +35,12 @@ Algunas opciones para renderizar las ramas:
 	gitk
 	git log --graph --oneline --decorate --all
 
+REVERT AND RESET
 
+git revert hash_commit => Desbaratar ese commit realizado y todos sus archivos, quita los archivos pero mantiene el historial
+git reset hash_commit => Remover, eliminar o quitar ese commit realizado con todos sus arhivos, quita todo y elimina el historial hasta el commit que se establecio
+
+git reset va de la mano con lo siguiente:
+--soft: Deshace el commit pero mantiene los cambios en staging.
+--mixed: Deshace el commit y quita los archivos del staging, pero mantiene los cambios en el código.
+--hard: Borra todo, incluyendo los cambios en el código.
