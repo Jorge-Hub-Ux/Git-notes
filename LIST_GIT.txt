@@ -29,7 +29,10 @@ git log
 git branch => verificar ramas
 git checkout -b nombre_rama => crear rama
 git checkout rama_existente - git switch rama_existente => cambiar a esa rama
+git branch -D nombre_rama => eliminar rama existente
 
 Algunas opciones para renderizar las ramas:
 	gitk
 	git log --graph --oneline --decorate --all
+
+
