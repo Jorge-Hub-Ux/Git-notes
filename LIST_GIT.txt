@@ -44,3 +44,13 @@ git reset va de la mano con lo siguiente:
 --soft: Deshace el commit pero mantiene los cambios en staging.
 --mixed: Deshace el commit y quita los archivos del staging, pero mantiene los cambios en el código.
 --hard: Borra todo, incluyendo los cambios en el código.
+
+TAG - CHECKOUT
+git tag -a nombre_version_tag -m "mensaje que quieras" => crear tag al ultimo commit
+git tag => listar por tags
+git show nombre_version_tag => Para mostrar detalle de ese tag
+gti tag -d nombre_version_tag => Eliminar tag dentro de los commits no altera nada en todo el proyecto
+
+git checkout hash_commit => Te lleva a ese commit especificamente pone el HEAD en ese commit, creando una copia del proyecto en una especie de limbo, donde se puede probar que sucede si se hubiese hecho algo diferente o añadido algo diferente como tal no crea una rama y no afecta el proyecto principal.
+git checkout main => Para volver main en el verdadero proyecto con el HEAD en el ultimo commit principal
+
