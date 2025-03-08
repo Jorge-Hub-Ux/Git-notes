@@ -54,3 +54,34 @@ gti tag -d nombre_version_tag => Eliminar tag dentro de los commits no altera na
 git checkout hash_commit => Te lleva a ese commit especificamente pone el HEAD en ese commit, creando una copia del proyecto en una especie de limbo, donde se puede probar que sucede si se hubiese hecho algo diferente o añadido algo diferente como tal no crea una rama y no afecta el proyecto principal.
 git checkout main => Para volver main en el verdadero proyecto con el HEAD en el ultimo commit principal
 
+git clone link_repositorio_nube
+
+Generar llaves ssh desde la terminal - git bash
+ssh-keygen -t ed25519 -C "tu_correo@example.com"
+J0rg3$
+
+Configurar el agente SSH: Activa el agente de SSH y añade la llave privada:
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+abrir archivo llave public con cat para poderlo copiar
+ssh -T git@github.com
+
+
+---CLONE FORK Y ESTRELLAS
+Clone => Copia el repositorio en tu local, puedes modificarlo y subir los cambios a este repositorio
+Fork => Copia el repositorio de la otra persona o entidad en el tuyo directamente, cuando lo clones podras modificarlo y subir los cambios a tu propio repositorio sin modificar el original de la otra persona o entidad
+Star => Marcar como favorito ese repositorio de la otra persona para ti, se vera una lista de favoritos en tu github
+
+PUSH - PULL - FETCH
+git push -u origin main => git push: Es el comando usado para enviar (o "empujar") cambios desde tu repositorio local hacia un repositorio remoto.
+	u: Es la abreviatura de -set-upstream. Este indicador configura la rama remota especificada como la rama "ascendente" (upstream) para la rama local actual. Esto significa que futuras ejecuciones de git push o git pull en esta rama local no necesitarán que especifiques explícitamente la rama y el remoto, porque estarán enlazados.
+	origin: Es el nombre del remoto al que estás enviando los cambios. Por convención, origin suele referirse al repositorio remoto que clonaste inicialmente.
+	main: Es el nombre de la rama remota a la que estás enviando los cambios. En este caso, es la rama principal del repositorio.
+git pull => Traer todos los cambios del repositorio github en la nube (origin)
+
+Si se hace un cambio desde la nube o cualquier otro lado, se utiliza git fetch para revisar esos cambios antes de fusionarlos con la rama remota
+de esta forma se asegura si es conveniente hacer merge de eso.
+git log main..origin/main => Revisara que hay de diferente del origin a la rama remota, es decir que commits diferentes estan en origin
+git merge origin/main => Si quieres fusionar los cambios se hacer un merge normal del origen a la rama local
+
