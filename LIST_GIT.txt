@@ -85,3 +85,22 @@ de esta forma se asegura si es conveniente hacer merge de eso.
 git log main..origin/main => Revisara que hay de diferente del origin a la rama remota, es decir que commits diferentes estan en origin
 git merge origin/main => Si quieres fusionar los cambios se hacer un merge normal del origen a la rama local
 
+CONECTAR REPOSITORIO GITHUB CON PROYECTO LOCAL
+
+git push => eso indicara error ya no habra repositorio 
+asi que usar
+git remote add origin <url-repository>
+git push u origin main => u: Es la abreviatura de -set-upstream. Este indicador configura la rama remota especificada como la rama "ascendente" (upstream) para la rama local actual. Esto significa que futuras ejecuciones de git push o git pull en esta rama local no necesitarán que especifiques explícitamente la rama y el remoto, porque estarán enlazados.
+
+HERRAMIENTAS DE COLABORACION EN GITHUB
+
+-Git hub projects => Gestionar tareas: todo - in progess - complete, automatizacion para actualizar estas tareas con los PR's (Pull Requests)
+					 Aplicar los issues a los repositorios que se necesite, definir tareas a los compañeros de trabajo, entre muchas cosas muchas
+- Markdown => Documentacion de tu repositorio, normalmente el Readme es para explicar tu repositorio, sin embargo markdown te ayuda a complementar
+			  este documento con imagenes, tablas, links entre otras cosas basicas potenciando la explicacion del repositorio
+			  En tu perfil de github puedes tener un readme acerca de ti, con markdonw puedes ponerle un estilos interesantes para hacerlo mas agradable
+-Wikis => Herramienta de github para hacer la documentacion del repositorio de una forma mas tecnica por secciones
+-Gist => Una opcion para compartir codigo con tus compañeros sin la necesidad de crear un repositorio con los archivos del proyecto
+		 Muy util para discutir el codigo de una funcionalidad especifica por ejemplo discutir un fragmento de codigo antes de implementarlo en tu proyecto
+-Pages => Un alojamiento gratis para tu sitio web estatico, revisar la documentacion para desplegarlo correctamente
+
