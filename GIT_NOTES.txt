@@ -105,3 +105,14 @@ HERRAMIENTAS DE COLABORACION EN GITHUB
 -Pages => Un alojamiento gratis para tu sitio web estatico, revisar la documentacion para desplegarlo correctamente
 
 GIT CODESPACES
+
+Git hub ofrece una maquina virtual con editor de codigo como vs studio, para crear o ejecutar el proyecto del repositorio, desde .net, node js a python, entre otros.
+Cuenta con 120 horas gratis, recomendacion eliminar el codespace tan pronto se termine de ejecutar las tareas.
+
+Falta probar mas sobre los codespace, se pueden migrar el vs code de github al vs code modo desktop, se debe tener en cuenta que aun asi
+ejecutandose en desktop el codespace se sigue ejecutando por lo tanto seguira el conteo de parte de github de prueba gratis.
+
+codespaces ofrece varias plantillas para comenzar proyectos con algunos frameworks y/o librerias
+Permite pair programming, para que un tercero ayude a modificar el codigo, se puede por medio de live share
+
+Si estas dentro de tu repositorio en GitHub y se oprime . o enter => esto abrira el repositorio en un vs code virtual en la web, ES SOLO UN EDITOR DE TEXTO no se puede compilar o ejecutar comandos
