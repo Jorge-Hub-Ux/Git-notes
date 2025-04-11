@@ -1,5 +1,0 @@
-Hola desde VS Code
-
-Cambios desde mi rama local
-
-Cambios desde mi rama principal
