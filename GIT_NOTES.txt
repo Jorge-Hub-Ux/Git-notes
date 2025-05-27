@@ -116,3 +116,25 @@ codespaces ofrece varias plantillas para comenzar proyectos con algunos framewor
 Permite pair programming, para que un tercero ayude a modificar el codigo, se puede por medio de live share
 
 Si estas dentro de tu repositorio en GitHub y se oprime . o enter => esto abrira el repositorio en un vs code virtual en la web, ES SOLO UN EDITOR DE TEXTO no se puede compilar o ejecutar comandos
+
+SEGURIDAD
+
+*TOKENS
+
+Permite compartir el proyecto con ciertas reglas que tu establaces por medio del token, es un acceso a un compañero o freelancer para ayudar en el proyecto, aqui se define que acciones puede realizar
+que puede modificar etc.
+Token classics => Permite configurar muchas opciones
+Fine - grained tokens => al parecer mas opciones para establecer
+
+Cuando va a clonar un repositorio y te dieron un token => clonas el proyecto ingresasas tu usuario y colocas el PAT (Personal acces token) como contraseña
+
+*SEGURIDAD DE PAQUETES
+-Dependabot => Activar alertas
+-Dependabot version updates 
+-Dependabot es como un checkmarx para versionamiento de dependencias que tenga el proyecto, verifica las posibles vulnerabilidades y crea acciones automatizadas para ajustarlas
+
+*CONFIGURACION DE REPOSITORIOS
+Configuracion del proyecto con el gitignore, muestra un repositorio publico muy grande con todos los archivos gitignore para cada lenguaje de programacion, aunque github tiene estas opciones tan pronto creas un nuevo repositorio
+
+*BRECHAS DE SEGURIDAD
+-Code security and analisis => codeql analysis (default) evalua verdaderos positivos como checkmarx con palabras que son vulnerables, ya que pueden almacenar data importante, como declarar una variable como password o stripe_key
